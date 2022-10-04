@@ -15,3 +15,8 @@ class Student:
 
     def summary(self):
         return (f"{self.name} is a {self.grade} enrolled in {self.get_num_classes()} classes : {self.display_classes()}")
+
+def student_with_more_classes(student1, student2):
+    if student1.get_num_classes() > student2.get_num_classes():
+        return student1
+    return student2
