@@ -1,4 +1,4 @@
-
+from school_schedule.student import Student
 
 #first instance
 quinn = Student(
@@ -33,7 +33,7 @@ claire = Student(
             )
 
 claire.get_num_classes()
-claire.summary()
+print(claire.summary())
 
 # Extra:
 # - create a function that will return the student with more classes
