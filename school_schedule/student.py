@@ -10,5 +10,8 @@ class Student:
     def get_num_classes(self):
         return len(self.classes)
 
+    def display_classes(self):
+        return(", ".join(self.classes))
+
     def summary(self):
-        return f"{self.name} is a {self.grade} enrolled in {self.get_num_classes()} classes"
+        return (f"{self.name} is a {self.grade} enrolled in {self.get_num_classes()} classes : {self.display_classes()}")
